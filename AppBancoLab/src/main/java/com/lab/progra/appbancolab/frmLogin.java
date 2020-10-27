@@ -28,11 +28,41 @@ public class frmLogin extends javax.swing.JFrame {
     private void initComponents() {
 
         lblIniciaS = new javax.swing.JLabel();
+        imgUser = new javax.swing.JLabel();
+        txtUsuario = new javax.swing.JTextField();
+        lblUsuario = new javax.swing.JLabel();
+        lblPass = new javax.swing.JLabel();
+        txtPass = new javax.swing.JTextField();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        btnEntrar = new javax.swing.JButton();
+        imgBanco = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        lblIniciaS.setBackground(new java.awt.Color(204, 204, 204));
         lblIniciaS.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         lblIniciaS.setText("   INICIA SESION   ");
+        lblIniciaS.setOpaque(true);
+
+        imgUser.setIcon(new javax.swing.ImageIcon("C:\\Users\\50379\\Documents\\GitHub\\AppBancoLab\\AppBancoLab\\src\\main\\java\\Imagenes\\masculine-avatar-user-with-suit_icon-icons.com_68296.png")); // NOI18N
+
+        lblUsuario.setBackground(new java.awt.Color(204, 204, 204));
+        lblUsuario.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        lblUsuario.setText("USUARIO");
+        lblUsuario.setOpaque(true);
+
+        lblPass.setBackground(new java.awt.Color(204, 204, 204));
+        lblPass.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        lblPass.setText("CONTRASEÑA");
+        lblPass.setOpaque(true);
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Usuario", "Administrador" }));
+
+        btnEntrar.setText("Entrar");
+
+        imgBanco.setBackground(new java.awt.Color(204, 204, 204));
+        imgBanco.setIcon(new javax.swing.ImageIcon("C:\\Users\\50379\\Documents\\GitHub\\AppBancoLab\\AppBancoLab\\src\\main\\java\\Imagenes\\logosloganpng.png")); // NOI18N
+        imgBanco.setOpaque(true);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -40,18 +70,43 @@ public class frmLogin extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(lblIniciaS)
-                .addContainerGap(422, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(lblIniciaS, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(imgUser, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(txtUsuario)
+                    .addComponent(lblUsuario)
+                    .addComponent(lblPass)
+                    .addComponent(txtPass)
+                    .addComponent(jComboBox1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnEntrar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(imgBanco, javax.swing.GroupLayout.PREFERRED_SIZE, 275, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(lblIniciaS)
-                .addContainerGap(282, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(imgUser)
+                .addGap(18, 18, 18)
+                .addComponent(lblUsuario)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(txtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(30, 30, 30)
+                .addComponent(lblPass)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(txtPass, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(btnEntrar)
+                .addContainerGap(32, Short.MAX_VALUE))
+            .addComponent(imgBanco, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     /**
@@ -90,6 +145,14 @@ public class frmLogin extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnEntrar;
+    private javax.swing.JLabel imgBanco;
+    private javax.swing.JLabel imgUser;
+    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel lblIniciaS;
+    private javax.swing.JLabel lblPass;
+    private javax.swing.JLabel lblUsuario;
+    private javax.swing.JTextField txtPass;
+    private javax.swing.JTextField txtUsuario;
     // End of variables declaration//GEN-END:variables
 }
