@@ -45,7 +45,7 @@ public class frmLogin extends javax.swing.JFrame {
         lblIniciaS.setText("   INICIA SESION   ");
         lblIniciaS.setOpaque(true);
 
-        imgUser.setIcon(new javax.swing.ImageIcon("C:\\Users\\50379\\Documents\\GitHub\\AppBancoLab\\AppBancoLab\\src\\main\\java\\com\\lab\\progra\\appbanco\\Galeria\\masculine-avatar-user-with-suit_icon-icons.com_68296.png")); // NOI18N
+        imgUser.setIcon(new javax.swing.ImageIcon("C:\\Users\\50379\\Documents\\GitHub\\AppBancoLab\\AppBancoLab\\src\\main\\java\\com\\lab\\progra\\appbancolab\\Galeria\\masculine-avatar-user-with-suit_icon-icons.com_68296.png")); // NOI18N
 
         lblUsuario.setBackground(new java.awt.Color(204, 204, 204));
         lblUsuario.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -62,7 +62,7 @@ public class frmLogin extends javax.swing.JFrame {
         btnEntrar.setText("Entrar");
 
         imgBanco.setBackground(new java.awt.Color(204, 204, 204));
-        imgBanco.setIcon(new javax.swing.ImageIcon("C:\\Users\\50379\\Documents\\GitHub\\AppBancoLab\\AppBancoLab\\src\\main\\java\\com\\lab\\progra\\appbanco\\Galeria\\logosloganpng.png")); // NOI18N
+        imgBanco.setIcon(new javax.swing.ImageIcon("C:\\Users\\50379\\Documents\\GitHub\\AppBancoLab\\AppBancoLab\\src\\main\\java\\com\\lab\\progra\\appbancolab\\Galeria\\logosloganpng.png")); // NOI18N
         imgBanco.setOpaque(true);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

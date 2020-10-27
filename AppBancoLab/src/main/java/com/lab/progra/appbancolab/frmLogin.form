@@ -82,7 +82,7 @@
     <Component class="javax.swing.JLabel" name="imgUser">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\50379\Documents\GitHub\AppBancoLab\AppBancoLab\src\main\java\com\lab\progra\appbanco\Galeria\masculine-avatar-user-with-suit_icon-icons.com_68296.png"/>
+          <Image iconType="2" name="C:\Users\50379\Documents\GitHub\AppBancoLab\AppBancoLab\src\main\java\com\lab\progra\appbancolab\Galeria\masculine-avatar-user-with-suit_icon-icons.com_68296.png"/>
         </Property>
       </Properties>
     </Component>
@@ -138,7 +138,7 @@
           <Color blue="cc" green="cc" red="cc" type="rgb"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\50379\Documents\GitHub\AppBancoLab\AppBancoLab\src\main\java\com\lab\progra\appbanco\Galeria\logosloganpng.png"/>
+          <Image iconType="2" name="C:\Users\50379\Documents\GitHub\AppBancoLab\AppBancoLab\src\main\java\com\lab\progra\appbancolab\Galeria\logosloganpng.png"/>
         </Property>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
