@@ -36,7 +36,7 @@
                   <Component id="btnEntrar" max="32767" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="imgBanco" pref="275" max="32767" attributes="0"/>
+              <Component id="imgBanco" min="-2" pref="275" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
