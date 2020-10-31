@@ -4,11 +4,15 @@
  * and open the template in the editor.
  */
 package com.lab.progra.appbancolab.Entidades;
-
+import com.lab.progra.appbancolab.ConBD.ConBD;
+import lombok.Data;
 /**
  *
  * @author Abby Lemus
  */
+@Data
 public class Tipousuario {
-    
+    public static ConBD Con = new ConBD();
+    public int Id;
+    public String TipoUser;
 }

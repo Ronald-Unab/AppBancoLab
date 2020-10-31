@@ -6,6 +6,7 @@
 package com.lab.progra.appbancolab.Entidades;
 
 import lombok.Data;
+import com.lab.progra.appbancolab.ConBD.ConBD;
 
 /**
  *
@@ -13,8 +14,9 @@ import lombok.Data;
  */
 @Data
 public class Usuario {
-   private int idUsuario;
-   private String Usuario;
-   private String PassWord;
-   private String tipoUsuario;
+   public static ConBD Con = new ConBD();
+   public int idUsuario;
+   public String Usuario;
+   public String PassWord;
+   public String tipoUsuario;
 }

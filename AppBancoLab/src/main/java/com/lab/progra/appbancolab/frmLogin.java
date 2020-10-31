@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package com.lab.progra.appbancolab;
-
+import  com.lab.progra.appbancolab.Entidades.Usuario;
 /**
  *
  * @author 50379
@@ -33,7 +33,7 @@ public class frmLogin extends javax.swing.JFrame {
         lblUsuario = new javax.swing.JLabel();
         lblPass = new javax.swing.JLabel();
         txtPass = new javax.swing.JTextField();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        cbxTipoUsuario = new javax.swing.JComboBox<>();
         btnEntrar = new javax.swing.JButton();
         imgBanco = new javax.swing.JLabel();
 
@@ -57,9 +57,14 @@ public class frmLogin extends javax.swing.JFrame {
         lblPass.setText("CONTRASEÑA");
         lblPass.setOpaque(true);
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Usuario", "Administrador" }));
+        cbxTipoUsuario.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Usuario", "Administrador" }));
 
         btnEntrar.setText("Entrar");
+        btnEntrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEntrarActionPerformed(evt);
+            }
+        });
 
         imgBanco.setBackground(new java.awt.Color(204, 204, 204));
         imgBanco.setIcon(new javax.swing.ImageIcon("C:\\Users\\50379\\Documents\\GitHub\\AppBancoLab\\AppBancoLab\\src\\main\\java\\com\\lab\\progra\\appbancolab\\Galeria\\logosloganpng.png")); // NOI18N
@@ -78,7 +83,7 @@ public class frmLogin extends javax.swing.JFrame {
                     .addComponent(lblUsuario)
                     .addComponent(lblPass)
                     .addComponent(txtPass)
-                    .addComponent(jComboBox1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(cbxTipoUsuario, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnEntrar, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
                 .addComponent(imgBanco, javax.swing.GroupLayout.PREFERRED_SIZE, 278, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -99,7 +104,7 @@ public class frmLogin extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtPass, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(cbxTipoUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(btnEntrar)
                 .addContainerGap(32, Short.MAX_VALUE))
@@ -109,6 +114,12 @@ public class frmLogin extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnEntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEntrarActionPerformed
+    
+      
+      
+    }//GEN-LAST:event_btnEntrarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -147,9 +158,9 @@ public class frmLogin extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnEntrar;
+    private javax.swing.JComboBox<String> cbxTipoUsuario;
     private javax.swing.JLabel imgBanco;
     private javax.swing.JLabel imgUser;
-    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel lblIniciaS;
     private javax.swing.JLabel lblPass;
     private javax.swing.JLabel lblUsuario;
