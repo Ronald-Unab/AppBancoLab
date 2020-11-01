@@ -117,7 +117,12 @@ public class frmLogin extends javax.swing.JFrame {
 
     private void btnEntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEntrarActionPerformed
     
+      Usuario U = new Usuario();
       
+      if (U.Usuario.equals(txtUsuario.getText()) && U.PassWord.equals(txtPass.getText()))
+      {
+      System.out.println("Bienvenido");
+      }
       
     }//GEN-LAST:event_btnEntrarActionPerformed
 
